@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://ckn6bog5ota70"]
+
+[ext_resource type="Script" path="res://scenes/menus/credits.gd" id="1_3dafo"]
+[ext_resource type="Theme" uid="uid://bx4xt3j8qbbhv" path="res://styles/buttons/Settings_Button.tres" id="2_brpoa"]
+
+[node name="Credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3dafo")
+
+[node name="Exit" type="Button" parent="."]
+offset_left = 530.0
+offset_top = 350.0
+offset_right = 555.0
+offset_bottom = 375.0
+theme = ExtResource("2_brpoa")
+text = " "
+
+[node name="LinkButton" type="LinkButton" parent="."]
+layout_mode = 0
+offset_left = 458.0
+offset_top = 292.0
+offset_right = 682.0
+offset_bottom = 332.0
+text = "Tiny Wonder Farm Assetpack"
+underline = 1
+uri = "https://butterymilk.itch.io/tiny-wonder-farm-asset-pack"
+
+[node name="LinkButton2" type="LinkButton" parent="."]
+layout_mode = 0
+offset_left = 457.0
+offset_top = 246.0
+offset_right = 555.0
+offset_bottom = 286.0
+text = "Cozy Ui pack"
+underline = 1
+uri = "https://toffeecraft.itch.io/ui-user-interface-pack-cozy-coffee"
+
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

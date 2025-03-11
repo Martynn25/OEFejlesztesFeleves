@@ -1,0 +1,55 @@
+[gd_scene load_steps=7 format=3 uid="uid://bpfmr2ge3ydil"]
+
+[ext_resource type="Script" path="res://scenes/menus/MainMenu.gd" id="1_ceawt"]
+[ext_resource type="Texture2D" uid="uid://bb2cfy1gpk7d5" path="res://Assets/visual/UiCozyFree.png" id="2_ywey8"]
+[ext_resource type="Theme" uid="uid://cqpuhxeh21kxw" path="res://styles/buttons/start_button.tres" id="3_ek43n"]
+[ext_resource type="Theme" uid="uid://bx4xt3j8qbbhv" path="res://styles/buttons/Settings_Button.tres" id="4_wthww"]
+[ext_resource type="Theme" uid="uid://dic2ly0g04k4a" path="res://styles/buttons/credits_button.tres" id="5_6b14i"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hbp82"]
+atlas = ExtResource("2_ywey8")
+region = Rect2(8, 167, 87, 81)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ceawt")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(575, 346)
+scale = Vector2(2, 2)
+texture = SubResource("AtlasTexture_hbp82")
+
+[node name="Start" type="Button" parent="."]
+layout_mode = 2
+offset_left = 500.0
+offset_top = 300.0
+offset_right = 650.0
+offset_bottom = 323.0
+theme = ExtResource("3_ek43n")
+text = "  "
+
+[node name="Exit" type="Button" parent="."]
+layout_mode = 2
+offset_left = 530.0
+offset_top = 350.0
+offset_right = 555.0
+offset_bottom = 375.0
+theme = ExtResource("4_wthww")
+text = " "
+
+[node name="Credits" type="Button" parent="."]
+layout_mode = 2
+offset_left = 597.0
+offset_top = 350.0
+offset_right = 622.0
+offset_bottom = 375.0
+theme = ExtResource("5_6b14i")
+
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Credits" to="." method="_on_credits_pressed"]
