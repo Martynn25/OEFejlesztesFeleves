@@ -13,6 +13,7 @@ grow_vertical = 2
 script = ExtResource("1_3dafo")
 
 [node name="Exit" type="Button" parent="."]
+layout_mode = 0
 offset_left = 530.0
 offset_top = 350.0
 offset_right = 555.0

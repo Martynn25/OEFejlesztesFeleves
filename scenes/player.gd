@@ -29,10 +29,10 @@ func _physics_process(delta: float) -> void:
 		$AnimatedSprite2D.play("walk_left")
 	else:
 		if(pd == 1):
-			print(pd)
+			#print(pd)
 			$AnimatedSprite2D.play("default_right")
 		else:
-			print(pd)
+			#print(pd)
 			$AnimatedSprite2D.play("default_left")
 
 	# Apply movement
