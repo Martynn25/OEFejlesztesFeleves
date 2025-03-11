@@ -1,0 +1,6 @@
+~ Tutorial_Dialogue
+Sign: Use The Arrow keys or W A S D to move
+Sign: Interact with objects with the "F" key
+- What again? => Tutorial_Dialogue
+- End the conversation => END
+=> END
