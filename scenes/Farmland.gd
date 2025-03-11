@@ -42,12 +42,12 @@ func _process(delta: float) -> void:
 		$Finish.visible=false
 
 
-func _on_area_2d_body_entered(body: CharacterBody2D) -> void:
+func _on_area_2d_body_entered(_body: Node2D) -> void:
 	IsPlayerInside = true
 	pass # Replace with function body.
 
 
-func _on_area_2d_body_exited(body: CharacterBody2D) -> void:
+func _on_area_2d_body_exited(_body: Node2D) -> void:
 	IsPlayerInside = false
 	pass # Replace with function body.
 

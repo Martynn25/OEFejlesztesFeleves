@@ -21,34 +21,40 @@ script = ExtResource("1_ceawt")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(575, 346)
-scale = Vector2(2, 2)
+scale = Vector2(4, 4)
 texture = SubResource("AtlasTexture_hbp82")
 
 [node name="Start" type="Button" parent="."]
 layout_mode = 2
-offset_left = 500.0
-offset_top = 300.0
-offset_right = 650.0
-offset_bottom = 323.0
+offset_left = 428.0
+offset_top = 240.0
+offset_right = 578.0
+offset_bottom = 273.0
+scale = Vector2(2, 2)
 theme = ExtResource("3_ek43n")
 text = "  "
 
 [node name="Exit" type="Button" parent="."]
 layout_mode = 2
-offset_left = 530.0
-offset_top = 350.0
-offset_right = 555.0
-offset_bottom = 375.0
+offset_left = 470.0
+offset_top = 330.0
+offset_right = 495.0
+offset_bottom = 355.0
+scale = Vector2(2, 2)
 theme = ExtResource("4_wthww")
 text = " "
 
 [node name="Credits" type="Button" parent="."]
 layout_mode = 2
-offset_left = 597.0
-offset_top = 350.0
-offset_right = 622.0
-offset_bottom = 375.0
+offset_left = 620.0
+offset_top = 330.0
+offset_right = 645.0
+offset_bottom = 355.0
+scale = Vector2(2, 2)
 theme = ExtResource("5_6b14i")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(575, 346)
 
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
