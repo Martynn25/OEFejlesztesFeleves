@@ -1,6 +1,16 @@
 ~ Start
+set Global.IsInDialogue = true
+Sign: *You start reading the sign*
+- Continue => egy
+~ egy
 Sign: Use The Arrow keys or W A S D to move
-Sign: Interact with objects with the "{{InputMap.action_get_events("Interact")[0].as_text()}}" key
+#Sign: Interact with objects with the "{{(InputMap.action_get_events("Interact")[0]).as_text()}}" key
+- Continue => ketto
+~ ketto
+Sign: Interact with objects with the "F" key
 - What again? => Start
-- End the conversation => END
+- Finish reading => Finish
+~ Finish
+Sign: *You finish readinf the sign* 
+set Global.IsInDialogue = false
 => END

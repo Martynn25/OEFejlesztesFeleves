@@ -1,12 +1,17 @@
 ~ Start
+set Global.IsInDialogue = true
 Sign: *You start reasing the sign*
 - Continue => egy
 ~ egy
-Sign: Interact with {{InputMap.action_get_events("Interact")[0].as_text()}} to plant and harvest crops
+#Sign: Interact with {{InputMap.action_get_events("Interact")[0].as_text()}} to plant and harvest crops
+Sign: Interact with "F" to plant and harves Crops
 - Continue => ketto
 ~ ketto
-Sign: Wait till the checkmark [img]{"res://scenes/checkmark.tres"}[/img] appears above the crops to {{"\n"}} havrvest them with {{(InputMap.action_get_events("Interact")[0])}}
+Sign: Wait till the checkmark appears above the crops to \n havrvest them!
+#/*[img]{"res://scenes/checkmark.tres"}[/img]*/ 
 - Start reading again => Start
-- End the conversation => END
-Sign: *You finish readinf the sign*
+- Finish reading => Finish
+~ Finish
+Sign: *You finish reading the sign*
+set Global.IsInDialogue = false
 => END

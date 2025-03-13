@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://bpfmr2ge3ydil"]
 
 [ext_resource type="Script" path="res://scriptek/MainMenu.gd" id="1_ceawt"]
-[ext_resource type="Texture2D" path="res://Assets/visual/UiCozyFree.png" id="2_ywey8"]
-[ext_resource type="Theme" path="res://styles/buttons/start_button.tres" id="3_ek43n"]
-[ext_resource type="Theme" path="res://styles/buttons/Settings_Button.tres" id="4_wthww"]
-[ext_resource type="Theme" path="res://styles/buttons/credits_button.tres" id="5_6b14i"]
+[ext_resource type="Texture2D" uid="uid://dnkqbn7b0yhtm" path="res://Assets/visual/UI/UiCozyFree.png" id="2_ywey8"]
+[ext_resource type="Theme" uid="uid://cqpuhxeh21kxw" path="res://Rescources/styles/buttons/start_button.tres" id="3_ek43n"]
+[ext_resource type="Theme" uid="uid://bx4xt3j8qbbhv" path="res://Rescources/styles/buttons/Settings_Button.tres" id="4_wthww"]
+[ext_resource type="Theme" uid="uid://dic2ly0g04k4a" path="res://Rescources/styles/buttons/credits_button.tres" id="5_6b14i"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hbp82"]
 atlas = ExtResource("2_ywey8")
