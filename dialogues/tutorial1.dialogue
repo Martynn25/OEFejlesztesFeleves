@@ -1,6 +1,6 @@
-~ Tutorial_Dialogue
+~ Start
 Sign: Use The Arrow keys or W A S D to move
-Sign: Interact with objects with the "F" key
-- What again? => Tutorial_Dialogue
+Sign: Interact with objects with the "{{InputMap.action_get_events("Interact")[0].as_text()}}" key
+- What again? => Start
 - End the conversation => END
 => END

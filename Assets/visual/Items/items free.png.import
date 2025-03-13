@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqwxsa4x4g2nk"
-path="res://.godot/imported/furniture free.png-8ce43b2156ea8d9fa773e0c16db3decb.ctex"
+uid="uid://bq6ygf003y4je"
+path="res://.godot/imported/items free.png-7c8ba1eb2ab7d29c9b06139041f8592e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/visual/Tiny Wonder Farm Free/objects&items/furniture free.png"
-dest_files=["res://.godot/imported/furniture free.png-8ce43b2156ea8d9fa773e0c16db3decb.ctex"]
+source_file="res://Assets/visual/Items/items free.png"
+dest_files=["res://.godot/imported/items free.png-7c8ba1eb2ab7d29c9b06139041f8592e.ctex"]
 
 [params]
 

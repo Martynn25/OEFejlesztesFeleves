@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://h6m7fq74dtid"
-path="res://.godot/imported/spring farm tilemap.png-0e42beec2208c3c2e16f5421797387bd.ctex"
+uid="uid://bntheaei6ev2s"
+path="res://.godot/imported/Samurai.png-3505415381e0501c56efb15414e0a60d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/visual/Tiny Wonder Farm Free/tilemaps/spring farm tilemap.png"
-dest_files=["res://.godot/imported/spring farm tilemap.png-0e42beec2208c3c2e16f5421797387bd.ctex"]
+source_file="res://Assets/visual/Characters/Samurai.png"
+dest_files=["res://.godot/imported/Samurai.png-3505415381e0501c56efb15414e0a60d.ctex"]
 
 [params]
 

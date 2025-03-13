@@ -1,82 +1,79 @@
 [gd_scene load_steps=16 format=3 uid="uid://dd77l4p1ekae0"]
 
 [ext_resource type="Script" path="res://scriptek/Farmland.gd" id="1_isai0"]
-[ext_resource type="Texture2D" uid="uid://bb2cfy1gpk7d5" path="res://Assets/visual/UiCozyFree.png" id="2_k58vo"]
-[ext_resource type="Texture2D" uid="uid://cbilmsbue4qn7" path="res://Assets/visual/Tiny Wonder Farm Free/objects&items/plants free.png" id="4_2roy5"]
+[ext_resource type="Texture2D" uid="uid://dnkqbn7b0yhtm" path="res://Assets/visual/UI/UiCozyFree.png" id="2_eh5rt"]
+[ext_resource type="Texture2D" uid="uid://c31qrwhav34vk" path="res://Assets/visual/Objects/plants free.png" id="3_u2daa"]
+[ext_resource type="Texture2D" uid="uid://bsentvhdwl44v" path="res://scenes/checkmark.tres" id="4_td2y1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vh6am"]
 size = Vector2(36, 37)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fpbtv"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_q7tey"]
-atlas = ExtResource("2_k58vo")
+[sub_resource type="AtlasTexture" id="AtlasTexture_vu0jr"]
+atlas = ExtResource("2_eh5rt")
 region = Rect2(128, 96, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_15ykq"]
-atlas = ExtResource("2_k58vo")
+[sub_resource type="AtlasTexture" id="AtlasTexture_ri50m"]
+atlas = ExtResource("2_eh5rt")
 region = Rect2(160, 96, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fq224"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_q7tey")
+"texture": SubResource("AtlasTexture_vu0jr")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_15ykq")
+"texture": SubResource("AtlasTexture_ri50m")
 }],
 "loop": true,
 "name": &"default",
 "speed": 3.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_7m0np"]
-atlas = ExtResource("4_2roy5")
+[sub_resource type="AtlasTexture" id="AtlasTexture_b7v1l"]
+atlas = ExtResource("3_u2daa")
 region = Rect2(0, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_nmxua"]
-atlas = ExtResource("4_2roy5")
+[sub_resource type="AtlasTexture" id="AtlasTexture_ac8oi"]
+atlas = ExtResource("3_u2daa")
 region = Rect2(16, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_o5mv7"]
-atlas = ExtResource("4_2roy5")
+[sub_resource type="AtlasTexture" id="AtlasTexture_q0bvc"]
+atlas = ExtResource("3_u2daa")
 region = Rect2(32, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_a2fga"]
-atlas = ExtResource("4_2roy5")
+[sub_resource type="AtlasTexture" id="AtlasTexture_fggk7"]
+atlas = ExtResource("3_u2daa")
 region = Rect2(48, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_6hv8i"]
-atlas = ExtResource("4_2roy5")
+[sub_resource type="AtlasTexture" id="AtlasTexture_s2c36"]
+atlas = ExtResource("3_u2daa")
 region = Rect2(64, 0, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_wr3tx"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_7m0np")
+"texture": SubResource("AtlasTexture_b7v1l")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_nmxua")
+"texture": SubResource("AtlasTexture_ac8oi")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_o5mv7")
+"texture": SubResource("AtlasTexture_q0bvc")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_a2fga")
+"texture": SubResource("AtlasTexture_fggk7")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_6hv8i")
+"texture": SubResource("AtlasTexture_s2c36")
 }],
 "loop": false,
 "name": &"Pumpkin",
 "speed": 1.0
 }]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7jrwr"]
-atlas = ExtResource("2_k58vo")
-region = Rect2(33, 49, 14, 14)
 
 [node name="Farmland" type="Marker2D"]
 position = Vector2(200, 150)
@@ -88,6 +85,7 @@ position = Vector2(-200, -150)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(200, 150)
 shape = SubResource("RectangleShape2D_vh6am")
+debug_color = Color(0.973995, 0.12719, 0.255596, 0.42)
 
 [node name="Area2D" type="Area2D" parent="StaticBody2D"]
 position = Vector2(200, 150)
@@ -107,13 +105,12 @@ visible = false
 scale = Vector2(1.5, 1.5)
 sprite_frames = SubResource("SpriteFrames_wr3tx")
 animation = &"Pumpkin"
-frame = 4
 frame_progress = 1.0
 
 [node name="Finish" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(0, -30)
-texture = SubResource("AtlasTexture_7jrwr")
+texture = ExtResource("4_td2y1")
 
 [connection signal="body_entered" from="StaticBody2D/Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="StaticBody2D/Area2D" to="." method="_on_area_2d_body_exited"]

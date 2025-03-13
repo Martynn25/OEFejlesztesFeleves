@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://q35u61agbe8j"
-path="res://.godot/imported/farm bridges free.png-f9aea90f41bb540ac54e9917211883fe.ctex"
+uid="uid://byxwkh8c8qim0"
+path="res://.godot/imported/farm inside free.png-0367c47674d15efba39c2f7e8f2d971e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/visual/Tiny Wonder Farm Free/tilemaps/farm bridges free.png"
-dest_files=["res://.godot/imported/farm bridges free.png-f9aea90f41bb540ac54e9917211883fe.ctex"]
+source_file="res://Assets/visual/TileMaps/farm inside free.png"
+dest_files=["res://.godot/imported/farm inside free.png-0367c47674d15efba39c2f7e8f2d971e.ctex"]
 
 [params]
 

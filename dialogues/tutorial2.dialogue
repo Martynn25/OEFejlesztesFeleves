@@ -1,0 +1,12 @@
+~ Start
+Sign: *You start reasing the sign*
+- Continue => egy
+~ egy
+Sign: Interact with {{InputMap.action_get_events("Interact")[0].as_text()}} to plant and harvest crops
+- Continue => ketto
+~ ketto
+Sign: Wait till the checkmark [img]{"res://scenes/checkmark.tres"}[/img] appears above the crops to {{"\n"}} havrvest them with {{(InputMap.action_get_events("Interact")[0])}}
+- Start reading again => Start
+- End the conversation => END
+Sign: *You finish readinf the sign*
+=> END

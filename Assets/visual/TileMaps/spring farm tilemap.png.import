@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6pph8w1amtvo"
-path="res://.godot/imported/farm inside free.png-5c52590e8123c0d8a83774f950bd474e.ctex"
+uid="uid://ctfim0c67dpcd"
+path="res://.godot/imported/spring farm tilemap.png-f2f78bafb3079b2cfa8359f62fd2fb9c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/visual/Tiny Wonder Farm Free/tilemaps/farm inside free.png"
-dest_files=["res://.godot/imported/farm inside free.png-5c52590e8123c0d8a83774f950bd474e.ctex"]
+source_file="res://Assets/visual/TileMaps/spring farm tilemap.png"
+dest_files=["res://.godot/imported/spring farm tilemap.png-f2f78bafb3079b2cfa8359f62fd2fb9c.ctex"]
 
 [params]
 

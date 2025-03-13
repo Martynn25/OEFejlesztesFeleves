@@ -1,20 +1,25 @@
 extends StaticBody2D
 var IsPLayerInRange = false
+@export var dialogue_recource = load("res://dialogues/tutorial1.dialogue")
+@export var TextureRecource = load("res://Assets/visual/sign.png")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	$AnimatedSprite2D.sprite_frames = TextureRecource
 	pass
 
 
 # Called every frame. 'delta' is the elapsed time since ogthe previous frame.
 func _process(delta: float) -> void:
 	if(IsPLayerInRange && Input.is_action_pressed("Interact")):
-		print("talk")
-		DialogueManager.show_example_dialogue_balloon(load("res://dialogues/tutorial1.dialogue"),"Tutorial_Dialogue")
-		return
-	pass
+		startDialog()
 
 
+func startDialog()->void:
+	print("talk")
+	DialogueManager.show_example_dialogue_balloon(dialogue_recource,"Start")
+	#player.IsInDialogue = true
+	
 
 
 

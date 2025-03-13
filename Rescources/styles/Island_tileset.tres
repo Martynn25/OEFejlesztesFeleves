@@ -1,9 +1,9 @@
 [gd_resource type="TileSet" load_steps=3 format=3 uid="uid://drdb0imrl2hej"]
 
-[ext_resource type="Texture2D" uid="uid://h6m7fq74dtid" path="res://Assets/visual/Tiny Wonder Farm Free/tilemaps/spring farm tilemap.png" id="1_347vk"]
+[ext_resource type="Texture2D" uid="uid://ctfim0c67dpcd" path="res://Assets/visual/TileMaps/spring farm tilemap.png" id="1_ul33x"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ym6xd"]
-texture = ExtResource("1_347vk")
+texture = ExtResource("1_ul33x")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0

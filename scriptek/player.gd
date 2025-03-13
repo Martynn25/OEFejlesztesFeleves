@@ -2,18 +2,18 @@ extends CharacterBody2D
 
 @export var speed: float = 200.0  # Movement speed
 var pd := 0
+var IsInDialogue = false
 
 func _physics_process(delta: float) -> void:
 	var direction := Vector2.ZERO
 	
-
-	# Get input direction
-	direction.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
-	direction.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
-	
-	# Normalize to prevent faster diagonal movement
-	if direction.length() > 0:
-		direction = direction.normalized()
+	if(!IsInDialogue):
+		direction.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
+		direction.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
+		
+		# Normalize to prevent faster diagonal movement
+		if direction.length() > 0:
+			direction = direction.normalized()
 	
 	if (Input.is_action_pressed("ui_left")):
 		$AnimatedSprite2D.play("walk_left")

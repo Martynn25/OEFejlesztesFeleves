@@ -16,7 +16,7 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	if IsPlayerInside:
 		# Show selection box only if not planted
-		if !Planted and !$selectionbox.visible:
+		if (!Planted and !$selectionbox.visible) || (CropReady and !$selectionbox.visible):
 			$selectionbox.visible = true
 			$selectionbox.play("default")
 
