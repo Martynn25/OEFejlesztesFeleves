@@ -3,8 +3,7 @@ set Global.IsInDialogue = true
 Sign: *You start reasing the sign*
 - Continue => egy
 ~ egy
-#Sign: Interact with {{InputMap.action_get_events("Interact")[0].as_text()}} to plant and harvest crops
-Sign: Interact with "F" to plant and harves Crops
+Sign: Interact with "{{Global.Interact}}" to plant and harvest crops
 - Continue => ketto
 ~ ketto
 Sign: Wait till the checkmark appears above the crops to \n havrvest them!
