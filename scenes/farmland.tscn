@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://bbp23s3x0it26" path="res://scriptek/Farmland.gd" id="1_isai0"]
 [ext_resource type="Texture2D" uid="uid://dnkqbn7b0yhtm" path="res://Assets/visual/UI/UiCozyFree.png" id="2_eh5rt"]
 [ext_resource type="Texture2D" uid="uid://c31qrwhav34vk" path="res://Assets/visual/Objects/plants free.png" id="3_u2daa"]
-[ext_resource type="Texture2D" uid="uid://bsentvhdwl44v" path="res://scenes/checkmark.tres" id="4_td2y1"]
+[ext_resource type="Texture2D" uid="uid://ywhb2n71jtr5" path="res://Assets/visual/UI/Checkmark.png" id="4_jfxha"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vh6am"]
 size = Vector2(36, 37)
@@ -110,7 +110,7 @@ frame_progress = 1.0
 [node name="Finish" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(0, -30)
-texture = ExtResource("4_td2y1")
+texture = ExtResource("4_jfxha")
 
 [connection signal="body_entered" from="StaticBody2D/Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="StaticBody2D/Area2D" to="." method="_on_area_2d_body_exited"]

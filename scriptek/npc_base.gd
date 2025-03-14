@@ -13,7 +13,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since ogthe previous frame.
 func _process(delta: float) -> void:
-	if(IsPLayerInRange && Input.is_action_just_pressed("Interact")):
+	if(IsPLayerInRange && Input.is_action_just_pressed("Interact") && !Global.IsInDialogue):
 		startDialogue()
 
 func _on_dialogue_ended():

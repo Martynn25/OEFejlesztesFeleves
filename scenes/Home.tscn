@@ -25,11 +25,11 @@ tile_set = ExtResource("2_582si")
 [node name="Farmland" parent="." instance=ExtResource("3_ld6nf")]
 
 [node name="TutorialSign" parent="." instance=ExtResource("4_2sjtl")]
-position = Vector2(276, 29)
+position = Vector2(280, 29)
 dialogue_recource = ExtResource("5_ka2m2")
 TextureRecource = ExtResource("6_kubt7")
 
 [node name="CropSign" parent="." instance=ExtResource("4_2sjtl")]
-position = Vector2(282, 152)
+position = Vector2(280, 152)
 dialogue_recource = ExtResource("8_vw2q4")
 TextureRecource = ExtResource("6_kubt7")

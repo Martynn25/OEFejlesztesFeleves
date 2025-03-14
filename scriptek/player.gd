@@ -14,19 +14,26 @@ func _physics_process(delta: float) -> void:
 		# Normalize to prevent faster diagonal movement
 		if direction.length() > 0:
 			direction = direction.normalized()
-	
-	if (Input.is_action_pressed("ui_left")):
-		$AnimatedSprite2D.play("walk_left")
-		pd = 0
-	elif (Input.is_action_pressed("ui_right")):
-		pd = 1
-		$AnimatedSprite2D.play("walk_right")
-	elif (Input.is_action_pressed("ui_up")):
-		pd=1
-		$AnimatedSprite2D.play("walk_right")
-	elif (Input.is_action_pressed("ui_down")):
-		pd = 0
-		$AnimatedSprite2D.play("walk_left")
+		
+		if (Input.is_action_pressed("ui_left")):
+			$AnimatedSprite2D.play("walk_left")
+			pd = 0
+		elif (Input.is_action_pressed("ui_right")):
+			pd = 1
+			$AnimatedSprite2D.play("walk_right")
+		elif (Input.is_action_pressed("ui_up")):
+			pd=1
+			$AnimatedSprite2D.play("walk_right")
+		elif (Input.is_action_pressed("ui_down")):
+			pd = 0
+			$AnimatedSprite2D.play("walk_left")
+		else:
+			if(pd == 1):
+				#print(pd)
+				$AnimatedSprite2D.play("default_right")
+			else:
+				#print(pd)
+				$AnimatedSprite2D.play("default_left")
 	else:
 		if(pd == 1):
 			#print(pd)

@@ -1,16 +1,16 @@
+
 ~ Start
 set Global.IsInDialogue = true
-Sign: *You start reasing the sign*
-- Continue => egy
+=> egy
 ~ egy
-Sign: Interact with "{{Global.Interact}}" to plant and harvest crops
+Sign: Interact with "{{Global.Interact[0]}}" or "{{Global.Interact[1]}}" to plant and harvest crops
 - Continue => ketto
 ~ ketto
-Sign: Wait till the checkmark appears above the crops to \n havrvest them!
-#/*[img]{"res://scenes/checkmark.tres"}[/img]*/ 
+Sign: Wait till the checkmark appears above the crops to havrvest them!
+#/* [img]{res://Assets/visual/UI/Checkmark.png}[/img] */ 
 - Start reading again => Start
 - Finish reading => Finish
 ~ Finish
-Sign: *You finish reading the sign*
+do wait(0.2)
 set Global.IsInDialogue = false
 => END
