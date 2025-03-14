@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=4 uid="uid://mrtmtgb5ilvy"]
 
-[ext_resource type="Script" path="res://scriptek/HomeScene.gd" id="1_6em6a"]
+[ext_resource type="Script" uid="uid://bchww33qth4ko" path="res://scriptek/HomeScene.gd" id="1_6em6a"]
 [ext_resource type="TileSet" uid="uid://drdb0imrl2hej" path="res://Rescources/styles/Island_tileset.tres" id="2_582si"]
 [ext_resource type="PackedScene" uid="uid://dp2rxcltklwhc" path="res://scenes/player.tscn" id="2_jewip"]
 [ext_resource type="PackedScene" uid="uid://dd77l4p1ekae0" path="res://scenes/farmland.tscn" id="3_ld6nf"]

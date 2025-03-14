@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://ctsjrxu6xusft"]
 
-[ext_resource type="Script" path="res://scriptek/npc_base.gd" id="1_2m0tb"]
+[ext_resource type="Script" uid="uid://bwarde55mmbu" path="res://scriptek/npc_base.gd" id="1_2m0tb"]
 [ext_resource type="Texture2D" uid="uid://jgvoqygj8h66" path="res://Assets/visual/Objects/sign.png" id="2_1glxg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7if64"]

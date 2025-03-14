@@ -38,11 +38,13 @@ func _process(_delta: float) -> void:
 	else:
 		$selectionbox.visible = false  # Hide selection box when leaving area
 
-func _on_area_2d_body_entered(_body: CharacterBody2D) -> void:
-	IsPlayerInside = true
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	if(body is CharacterBody2D):
+		IsPlayerInside = true
 
-func _on_area_2d_body_exited(_body: CharacterBody2D) -> void:
-	IsPlayerInside = false
+func _on_area_2d_body_exited(body: Node2D) -> void:
+	if(body is CharacterBody2D):
+		IsPlayerInside = false
 
 func _on_crop_animation_finished() -> void:
 	CropReady = true

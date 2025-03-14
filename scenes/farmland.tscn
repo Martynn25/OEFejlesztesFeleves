@@ -1,6 +1,6 @@
 [gd_scene load_steps=16 format=3 uid="uid://dd77l4p1ekae0"]
 
-[ext_resource type="Script" path="res://scriptek/Farmland.gd" id="1_isai0"]
+[ext_resource type="Script" uid="uid://bbp23s3x0it26" path="res://scriptek/Farmland.gd" id="1_isai0"]
 [ext_resource type="Texture2D" uid="uid://dnkqbn7b0yhtm" path="res://Assets/visual/UI/UiCozyFree.png" id="2_eh5rt"]
 [ext_resource type="Texture2D" uid="uid://c31qrwhav34vk" path="res://Assets/visual/Objects/plants free.png" id="3_u2daa"]
 [ext_resource type="Texture2D" uid="uid://bsentvhdwl44v" path="res://scenes/checkmark.tres" id="4_td2y1"]
