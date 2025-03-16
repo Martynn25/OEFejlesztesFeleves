@@ -36,7 +36,11 @@ func _process(_delta: float) -> void:
 			$Finish.visible = false
 
 	else:
-		$selectionbox.visible = false  # Hide selection box when leaving area
+		$selectionbox.visible = false
+	if Planted:
+		$StaticBody2D/CollisionShape2D.disabled = false
+	else:
+		$StaticBody2D/CollisionShape2D.disabled = true # Hide selection box when leaving area
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if(body is CharacterBody2D):

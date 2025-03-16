@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=3 uid="uid://cjn7iqw1a1iyq"]
+
+[ext_resource type="Texture2D" uid="uid://cqy6nv1aoc262" path="res://Assets/visual/TileMaps/Farm_Merge.png" id="1_7ukg5"]
+[ext_resource type="Script" uid="uid://c0iusho7l4lmg" path="res://scenes/obstacle.gd" id="1_drdry"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_drdry"]
+atlas = ExtResource("1_7ukg5")
+region = Rect2(320, 160, 20, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cjuko"]
+atlas = ExtResource("1_7ukg5")
+region = Rect2(320, 144, 20, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sh7k1"]
+atlas = ExtResource("1_7ukg5")
+region = Rect2(320, 128, 20, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i4xvc"]
+atlas = ExtResource("1_7ukg5")
+region = Rect2(320, 112, 20, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5oy3q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_drdry")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cjuko")
+}],
+"loop": true,
+"name": &"SeaGrass",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sh7k1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i4xvc")
+}],
+"loop": true,
+"name": &"SeaRock",
+"speed": 2.0
+}]
+
+[node name="Obstacle" type="Node2D"]
+script = ExtResource("1_drdry")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_5oy3q")
+animation = &"SeaGrass"
+frame_progress = 0.798023

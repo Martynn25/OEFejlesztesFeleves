@@ -1,0 +1,7 @@
+~ Start
+Ship: Do you Want to leave the Tutorial Island?
+- No! => END
+- Yes! => Finish
+~ Finish
+do get_tree().change_scene_to_file("res://scenes/MainFarmIsland.tscn")
+=> END
