@@ -9,7 +9,7 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if EndingRange && Input.is_action_just_pressed("Interact"):
 		DialogueManager.show_example_dialogue_balloon(load("res://dialogues/TutorialEnd.dialogue"),"Start")
 	pass
