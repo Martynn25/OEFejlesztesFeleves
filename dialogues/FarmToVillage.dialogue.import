@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_14"
+type="Resource"
+uid="uid://dymeue04b8gk2"
+path="res://.godot/imported/FarmToVillage.dialogue-7f4add9644ecf1ddafc3fc959cf445ff.tres"
+
+[deps]
+
+source_file="res://dialogues/FarmToVillage.dialogue"
+dest_files=["res://.godot/imported/FarmToVillage.dialogue-7f4add9644ecf1ddafc3fc959cf445ff.tres"]
+
+[params]
+
+defaults=true

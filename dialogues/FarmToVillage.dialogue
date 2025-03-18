@@ -1,0 +1,8 @@
+~ start
+ : Do you want to go to the village?
+- No! => END
+- Yes! => Finish
+~ Finish
+set Global.previousScene = "village"
+do get_tree().change_scene_to_file("res://scenes/Places/village.tscn")
+=> END

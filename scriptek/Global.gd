@@ -1,6 +1,7 @@
 extends Node
 @export var IsInDialogue = false
 var Interact := []
+var previousScene =""
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	var InteractArray = InputMap.action_get_events("Interact")

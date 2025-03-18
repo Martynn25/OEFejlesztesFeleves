@@ -1,8 +1,8 @@
-~ Start
-Ship: Do you Want to leave the Tutorial Island?
+~ start
+ : Do you want to return to your farm?
 - No! => END
 - Yes! => Finish
 ~ Finish
-set Global.previousScene = "tutorial"
+set Global.previousScene = "village"
 do get_tree().change_scene_to_file("res://scenes/Places/MainFarmIsland.tscn")
 => END

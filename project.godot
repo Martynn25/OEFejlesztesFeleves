@@ -8,6 +8,14 @@
 
 config_version=5
 
+[OEfeleves]
+
+config/achievements/local_source="res://"
+config/achievements/remote_source="https://"
+config/achievements/save_directory="C:/Users/Martin/AppData/Roaming/Godot/app_userdata/OEfeleves"
+config/achievements/save_file_name="achievements.json"
+config/achievements/password="HfDrBgYrWgRNUxUv3a2GaSMow"
+
 [application]
 
 config/name="OEfeleves"
@@ -19,6 +27,7 @@ config/icon="res://Assets/visual/icon.svg"
 
 Global="*res://scenes/Global.tscn"
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+GodotParadiseAchievements="*res://addons/achievements/achievements.tscn"
 
 [dotnet]
 
@@ -26,7 +35,7 @@ project/assembly_name="OEfeleves"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
+enabled=PackedStringArray("res://addons/achievements/plugin.cfg", "res://addons/dialogue_manager/plugin.cfg")
 
 [input]
 
@@ -100,7 +109,7 @@ Interact={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://dialogues/tutorial1.dialogue", "res://dialogues/tutorial2.dialogue", "res://dialogues/TutorialEnd.dialogue")
+locale/translations_pot_files=PackedStringArray("res://dialogues/tutorial1.dialogue", "res://dialogues/tutorial2.dialogue", "res://dialogues/TutorialEnd.dialogue", "res://dialogues/VillageToFarm.dialogue", "res://dialogues/FarmToVillage.dialogue")
 
 [rendering]
 
