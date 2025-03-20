@@ -97,7 +97,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"default_left",
-"speed": 5.0
+"speed": 2.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -108,7 +108,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"default_right",
-"speed": 5.0
+"speed": 2.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -179,7 +179,8 @@ shape = SubResource("RectangleShape2D_r2ja7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_bf13p")
-animation = &"walk_left"
+animation = &"default_right"
+frame_progress = 0.335988
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3, 3)

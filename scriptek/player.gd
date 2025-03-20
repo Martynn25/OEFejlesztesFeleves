@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var speed: float = 200.0  # Movement speed
+@export var speed: float = 150.0  # Movement speed
 var pd := 0
 func _ready() -> void:
 	print(Global.IsInDialogue)
