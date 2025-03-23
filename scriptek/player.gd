@@ -17,18 +17,18 @@ func _physics_process(_delta: float) -> void:
 		if (Input.is_action_pressed("ui_left")):
 			$AnimatedSprite2D.play("walk_left")
 			pd = 0
-			print(pd)
+			#print(pd)
 		elif (Input.is_action_pressed("ui_right")):
 			pd = 1
-			print(pd)
+			#print(pd)
 			$AnimatedSprite2D.play("walk_right")
 		elif (Input.is_action_pressed("ui_up")):
 			pd=1
-			print(pd)
+			#print(pd)
 			$AnimatedSprite2D.play("walk_right")
 		elif (Input.is_action_pressed("ui_down")):
 			pd = 0
-			print(pd)
+			#print(pd)
 			$AnimatedSprite2D.play("walk_left")
 		else:
 			if(pd == 1):

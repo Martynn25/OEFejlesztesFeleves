@@ -1,7 +1,7 @@
 ~ start
  : Do you want to return to your farm?
-- No! => END
 - Yes! => Finish
+- No! => END
 ~ Finish
 set Global.previousScene = "village"
 do get_tree().change_scene_to_file("res://scenes/Places/MainFarmIsland.tscn")
