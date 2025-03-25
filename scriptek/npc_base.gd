@@ -22,7 +22,7 @@ func _on_dialogue_ended():
 
 func startDialogue()->void:
 	print("talk"+ dialogue_recource.to_string())
-	DialogueManager.show_example_dialogue_balloon(dialogue_recource,"Start")
+	DialogueManager.show_example_dialogue_balloon(dialogue_recource,TextureRecource,"Start")
 	print("locked")
 
 

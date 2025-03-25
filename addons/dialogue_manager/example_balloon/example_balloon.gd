@@ -80,9 +80,10 @@ func _notification(what: int) -> void:
 
 
 ## Start some dialogue
-func start(dialogue_resource: DialogueResource, title: String, extra_game_states: Array = []) -> void:
+func start(dialogue_resource: DialogueResource,Portrait : Resource, title: String, extra_game_states: Array = []) -> void:
 	temporary_game_states = [self] + extra_game_states
 	is_waiting_for_input = false
+	$Balloon/Sprite2D.sprite_frames = Portrait
 	resource = dialogue_resource
 	self.dialogue_line = await resource.get_next_dialogue_line(title, temporary_game_states)
 
