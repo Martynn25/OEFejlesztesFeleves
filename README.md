@@ -32,5 +32,8 @@ Since this is a school project, external contributions are not expected. However
 ## License
 This project is for educational purposes and not intended for commercial use but i have put it under MIT License.
 
+## Documentation
+I am using obsidian to create and visualise the documentation for this project but I will create a PDF version of it when "finished"
+
 ---
 *Created as part of a school project.*
