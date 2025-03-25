@@ -1,20 +1,24 @@
 {
   "main": {
-    "id": "46c54d6cdf27266b",
+    "id": "5324373015726ba8",
     "type": "split",
     "children": [
       {
-        "id": "05bf37b2c47a0481",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "0bf100952aa8eafa",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "OEfeleves/Core/CORE.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "CORE"
             }
           }
         ]
@@ -23,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "c379966bc1962ec5",
+    "id": "d0fc0d967f0aac23",
     "type": "split",
     "children": [
       {
-        "id": "8c0d876eefd6c8fe",
+        "id": "8aed139dbd06925c",
         "type": "tabs",
         "children": [
           {
-            "id": "3ceee7c8b936eaaa",
+            "id": "21c74231f6b81204",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +48,7 @@
             }
           },
           {
-            "id": "eb0a30f0a5b49d35",
+            "id": "15ec810e1a2a588d",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,7 +65,7 @@
             }
           },
           {
-            "id": "af5d2a2463465cff",
+            "id": "b50c40e9a74b7dec",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -77,19 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "63bb7cd129e33953",
+    "id": "065585f8b16033a0",
     "type": "split",
     "children": [
       {
-        "id": "bbf3edbbcf38098c",
+        "id": "dea92960c11d753f",
         "type": "tabs",
         "children": [
           {
-            "id": "cb03b4a50c9c6b92",
+            "id": "1251f55cd011c356",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "NPCS/Jane.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,24 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Jane"
             }
           },
           {
-            "id": "7c84caf224872ed8",
+            "id": "c8afe3171ec6bb11",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "NPCS/Jane.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Jane"
             }
           },
           {
-            "id": "b952ef1df5f68c5d",
+            "id": "731d3826fc3e54e3",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -131,17 +137,18 @@
             }
           },
           {
-            "id": "5e42cca686e94210",
+            "id": "cf96d9e4dbfcad9f",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+                "file": "NPCS/Jane.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Jane"
             }
           }
         ]
@@ -158,9 +165,25 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "homepage:Open homepage": false
     }
   },
-  "active": "0bf100952aa8eafa",
-  "lastOpenFiles": []
+  "active": "e7a7b303c61786dc",
+  "lastOpenFiles": [
+    "Core/CORE.md",
+    "Core/Engine.md",
+    "Core/Global.md",
+    "Core/Player.md",
+    "Dialogues/Dialogues.md",
+    "NPCS/NPCS.md",
+    "NPCS/Jane.md",
+    "Core",
+    "[Engine.md",
+    "NPCS/Victor.md",
+    "Jane portrait.png",
+    "Dialogues",
+    "NPCS",
+    "Welcome.md"
+  ]
 }
