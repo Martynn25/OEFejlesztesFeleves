@@ -30,7 +30,7 @@ This is a 2D game developed in **Godot Engine 4.4** as a school project. The gam
 Since this is a school project, external contributions are not expected. However, feedback is always welcome!
 
 ## License
-This project is for educational purposes and not intended for commercial use.
+This project is for educational purposes and not intended for commercial use but i have put it under MIT License.
 
 ---
 *Created as part of a school project.*
