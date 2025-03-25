@@ -1,0 +1,11 @@
+back link: [[CORE]]
+
+Godot Engine 4.4 is a powerful, open-source game engine designed for both 2D and 3D game development, with a particular emphasis on flexibility, efficiency, and ease of use. It features a unique node-based architecture that streamlines the development process, making it intuitive for both beginners and experienced developers.
+
+For 2D game development, Godot 4.4 provides a dedicated 2D engine that operates independently of its 3D features, ensuring optimized performance without unnecessary overhead. It includes a rich set of built-in tools for handling sprites, animations, physics, tilemaps, and UI design, allowing developers to create complex 2D games with minimal effort. The engine supports features such as pixel-perfect rendering (that im gonna use in my game), custom shaders, lighting effects, and an advanced animation system with animation trees and blending.
+
+Scripting in Godot is primarily done using GDScript (my chosen language for this project), a lightweight and easy-to-learn language specifically designed for the engine, though it also supports C#, C++, and visual scripting. The engine’s editor is highly customizable, offering a streamlined workflow with built-in debugging tools, real-time editing, and seamless asset management.
+
+Godot 4.4 also supports exporting to multiple platforms, including Windows, Linux, macOS, Android, iOS, and web, making it a versatile choice for 2D game developers. With an active open-source community and continuous improvements, Godot 4.4 remains a top choice for indie developers and hobbyists looking for a free, high-performance game engine with extensive 2D capabilities.
+
+In this project, I use the **DialogueManager3** ([[Dialogues]]) plugin for handling in-game dialogues. It seamlessly integrates with Godot 4.4, allowing for structured, branching conversations with support for variables and conditions. This enhances NPC ([[NPCS]]) interactions and storytelling while keeping dialogue management efficient and flexible.

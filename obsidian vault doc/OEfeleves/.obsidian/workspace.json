@@ -1,0 +1,232 @@
+{
+  "main": {
+    "id": "408b43f761465316",
+    "type": "split",
+    "children": [
+      {
+        "id": "14f5005746078721",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1ceacc8954c981cb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Core/Player.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Player"
+            }
+          },
+          {
+            "id": "4ba33807f45effc2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Core/Engine.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Engine"
+            }
+          },
+          {
+            "id": "2d2f51a5f64f9cb6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NPCS/NPCS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "NPCS"
+            }
+          },
+          {
+            "id": "80b1fe4b80ebad52",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dialogues/Dialogues.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Dialogues"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d0fc0d967f0aac23",
+    "type": "split",
+    "children": [
+      {
+        "id": "8aed139dbd06925c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "21c74231f6b81204",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "15ec810e1a2a588d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "b50c40e9a74b7dec",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "065585f8b16033a0",
+    "type": "split",
+    "children": [
+      {
+        "id": "dea92960c11d753f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1251f55cd011c356",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "NPCS/Jane.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Jane"
+            }
+          },
+          {
+            "id": "c8afe3171ec6bb11",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "NPCS/Jane.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Jane"
+            }
+          },
+          {
+            "id": "731d3826fc3e54e3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "cf96d9e4dbfcad9f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "NPCS/Jane.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Jane"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "homepage:Open homepage": false
+    }
+  },
+  "active": "80b1fe4b80ebad52",
+  "lastOpenFiles": [
+    "Core/CORE.md",
+    "Core/Engine.md",
+    "Core/Global.md",
+    "Core/Player.md",
+    "Dialogues/Dialogues.md",
+    "NPCS/NPCS.md",
+    "NPCS/Jane.md",
+    "Core",
+    "[Engine.md",
+    "NPCS/Victor.md",
+    "Jane portrait.png",
+    "Dialogues",
+    "NPCS",
+    "Welcome.md"
+  ]
+}
