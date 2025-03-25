@@ -1,5 +1,4 @@
 # OEFejlesztesFeleves
-# My Godot 4.4 Game Project
 
 ## Overview
 This is a 2D game developed in **Godot Engine 4.4** as a school project. The game features engaging gameplay, interactive NPCs, and a branching dialogue system powered by the **DialogueManager3** plugin.
