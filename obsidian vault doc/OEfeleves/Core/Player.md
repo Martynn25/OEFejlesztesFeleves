@@ -31,3 +31,6 @@ We use the previous direction value to set the idle animation when no input is d
 		`$AnimatedSprite2D.play("default_right")`
 	`else:`
 		`$AnimatedSprite2D.play("default_left")` 
+Inventory:
+For now its only a plan but its coming together nicely
+![[inventory plan.png]]
