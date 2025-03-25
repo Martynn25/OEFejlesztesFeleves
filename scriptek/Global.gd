@@ -1,5 +1,5 @@
 extends Node
-@export var IsInDialogue = false
+var IsInDialogue = false
 var Interact := []
 var previousScene =""
 # Called when the node enters the scene tree for the first time.
