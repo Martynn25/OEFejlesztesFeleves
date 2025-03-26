@@ -170,7 +170,6 @@ animations = [{
 }]
 
 [node name="Player" type="CharacterBody2D"]
-position = Vector2(20, 20)
 script = ExtResource("1_spvoi")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -184,3 +183,6 @@ frame_progress = 0.335988
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3, 3)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false

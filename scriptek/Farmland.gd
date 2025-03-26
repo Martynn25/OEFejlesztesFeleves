@@ -3,6 +3,7 @@ extends Marker2D
 var IsPlayerInside = false
 var CropReady = false
 var Planted = false
+@export var CropType := ""
 
 func _ready() -> void:
 	IsPlayerInside = false
@@ -11,6 +12,7 @@ func _ready() -> void:
 	$selectionbox.visible = false
 	$Crop.visible = false
 	$Finish.visible = false
+
 
 
 func _process(_delta: float) -> void:
@@ -24,7 +26,7 @@ func _process(_delta: float) -> void:
 		if Input.is_action_just_pressed("Interact") and !Planted:
 			Planted = true
 			$Crop.visible = true
-			$Crop.play("Pumpkin")
+			$Crop.play("pumpkin")
 			print("Crop planted")
 
 		# Harvesting logic

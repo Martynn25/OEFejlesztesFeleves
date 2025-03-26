@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://q3ymf4hqy2gj"]
+
+[ext_resource type="Script" uid="uid://d0qeiwrl1qatt" path="res://scriptek/inventory_item.gd" id="1_u4rwp"]
+[ext_resource type="SpriteFrames" uid="uid://bv2t3y2ed5jka" path="res://Assets/visual/Items/Items_Spriteframes.tres" id="2_letey"]
+
+[node name="InventoryItem" type="Node2D" groups=["Items"]]
+script = ExtResource("1_u4rwp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2_letey")
+animation = &"carrot"

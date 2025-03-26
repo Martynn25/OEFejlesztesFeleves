@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://dd77l4p1ekae0"]
+[gd_scene load_steps=31 format=3 uid="uid://dd77l4p1ekae0"]
 
 [ext_resource type="Script" uid="uid://bbp23s3x0it26" path="res://scriptek/Farmland.gd" id="1_isai0"]
 [ext_resource type="Texture2D" uid="uid://dnkqbn7b0yhtm" path="res://Assets/visual/UI/UiCozyFree.png" id="2_eh5rt"]
@@ -32,6 +32,46 @@ animations = [{
 "speed": 3.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_jfxha"]
+atlas = ExtResource("3_u2daa")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_okwds"]
+atlas = ExtResource("3_u2daa")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qqej5"]
+atlas = ExtResource("3_u2daa")
+region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yhiid"]
+atlas = ExtResource("3_u2daa")
+region = Rect2(48, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c03fg"]
+atlas = ExtResource("3_u2daa")
+region = Rect2(64, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s68st"]
+atlas = ExtResource("3_u2daa")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8itxf"]
+atlas = ExtResource("3_u2daa")
+region = Rect2(16, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mweia"]
+atlas = ExtResource("3_u2daa")
+region = Rect2(32, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vowgm"]
+atlas = ExtResource("3_u2daa")
+region = Rect2(48, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t8jwc"]
+atlas = ExtResource("3_u2daa")
+region = Rect2(64, 32, 16, 16)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_b7v1l"]
 atlas = ExtResource("3_u2daa")
 region = Rect2(0, 0, 16, 16)
@@ -52,8 +92,68 @@ region = Rect2(48, 0, 16, 16)
 atlas = ExtResource("3_u2daa")
 region = Rect2(64, 0, 16, 16)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_fciyt"]
+atlas = ExtResource("3_u2daa")
+region = Rect2(0, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_om6hl"]
+atlas = ExtResource("3_u2daa")
+region = Rect2(16, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i38li"]
+atlas = ExtResource("3_u2daa")
+region = Rect2(32, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cfd50"]
+atlas = ExtResource("3_u2daa")
+region = Rect2(48, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wnyqd"]
+atlas = ExtResource("3_u2daa")
+region = Rect2(64, 48, 16, 16)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_wr3tx"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jfxha")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_okwds")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qqej5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yhiid")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c03fg")
+}],
+"loop": true,
+"name": &"carrot",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s68st")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8itxf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mweia")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vowgm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t8jwc")
+}],
+"loop": true,
+"name": &"potato",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_b7v1l")
@@ -71,8 +171,28 @@ animations = [{
 "texture": SubResource("AtlasTexture_s2c36")
 }],
 "loop": false,
-"name": &"Pumpkin",
+"name": &"pumpkin",
 "speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fciyt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_om6hl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i38li")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cfd50")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wnyqd")
+}],
+"loop": true,
+"name": &"tomato",
+"speed": 5.0
 }]
 
 [node name="Farmland" type="Marker2D"]
@@ -104,8 +224,7 @@ frame_progress = 0.0521632
 visible = false
 scale = Vector2(1.5, 1.5)
 sprite_frames = SubResource("SpriteFrames_wr3tx")
-animation = &"Pumpkin"
-frame_progress = 1.0
+animation = &"tomato"
 
 [node name="Finish" type="Sprite2D" parent="."]
 visible = false

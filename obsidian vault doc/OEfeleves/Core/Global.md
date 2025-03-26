@@ -5,6 +5,7 @@ var IsInDialogue = false (false by default)
 var Interact := [] (an empty array by default)
 var previousScene = "" (empty by default)
 
+
 When loaded an `InterractArray` is created by calling `InputMap.action_get_events("Interact")`.
 Then, we separate the array by adding the PC and Console key-bind to the `Interract` array with 
 `Interact.append(InteractArray[0].as_text().rstrip(" (Physical)"))` and `Interact.append(InteractArray[1].as_text())`. The `rstrip(" Physical")` is only done on the PC bind as the Console bind contains multiple binds for different controllers.

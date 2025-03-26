@@ -3,6 +3,7 @@ extends CharacterBody2D
 @export var speed: float = 150.0  # Movement speed
 var pd := 0
 func _ready() -> void:
+	Global.set_player_reference(self)
 	print(Global.IsInDialogue)
 
 func _physics_process(_delta: float) -> void:

@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://cjn7iqw1a1iyq"]
 
 [ext_resource type="Texture2D" uid="uid://cqy6nv1aoc262" path="res://Assets/visual/TileMaps/Farm_Merge.png" id="1_7ukg5"]
-[ext_resource type="Script" uid="uid://c0iusho7l4lmg" path="res://scenes/obstacle.gd" id="1_drdry"]
+[ext_resource type="Script" uid="uid://c0iusho7l4lmg" path="res://scriptek/obstacle.gd" id="1_drdry"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_drdry"]
 atlas = ExtResource("1_7ukg5")
