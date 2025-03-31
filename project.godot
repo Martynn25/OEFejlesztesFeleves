@@ -112,6 +112,14 @@ INVENTORY={
 , Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":4,"pressure":0.0,"pressed":false,"script":null)
 ]
 }
+Inv_kurzor_up={
+"deadzone": 0.2,
+"events": []
+}
+Inv_kurzor_down={
+"deadzone": 0.2,
+"events": []
+}
 
 [internationalization]
 

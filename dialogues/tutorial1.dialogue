@@ -7,6 +7,9 @@ Sign: Use The Arrow keys or W A S D to move
 - Continue => ketto
 ~ ketto
 Sign: Interact with objects with the "{{Global.Interact[0]}}" or "{{Global.Interact[1]}} key
+- Continue => harom
+~ harom
+Sign: Acces the inventory with the "{{Global.inv_inp[0]}}" or "{{Global.inv_inp[1]}}" key
 - What again? => Start
 - Finish reading => Finish
 ~ Finish

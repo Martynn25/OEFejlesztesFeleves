@@ -1,8 +1,10 @@
 ~ start
+set Global.IsInDialogue = true
  : Do you want to go to the village?
 - Yes! => Finish
 - No! => END
 ~ Finish
 set Global.previousScene = "village"
+set Global.IsInDialogue = false
 do get_tree().change_scene_to_file("res://scenes/Places/village.tscn")
 => END

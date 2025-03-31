@@ -14,10 +14,12 @@ func _ready():
 	var InteractArray = InputMap.action_get_events("Interact")
 	Interact.append(InteractArray[0].as_text().rstrip(" (Physical)"))
 	Interact.append(InteractArray[1].as_text())
+	print(Interact)
 	
 	var InvINpArr = InputMap.action_get_events("INVENTORY")
 	inv_inp.append(InvINpArr[0].as_text().rstrip(" (Physical)"))
 	inv_inp.append(InvINpArr[1].as_text())
+	print(inv_inp)
 	
 	Inventory.resize(15)
 

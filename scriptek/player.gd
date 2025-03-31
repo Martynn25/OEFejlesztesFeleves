@@ -2,13 +2,14 @@ extends CharacterBody2D
 
 @export var speed: float = 150.0  # Movement speed
 var pd := 0
+var lock = false
 func _ready() -> void:
 	Global.set_player_reference(self)
 	print(Global.IsInDialogue)
 
 func _physics_process(_delta: float) -> void:
 	var direction := Vector2.ZERO
-	if(!Global.IsInDialogue):
+	if(!Global.IsInDialogue && !lock):
 		direction.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
 		direction.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
 		
@@ -34,10 +35,18 @@ func _physics_process(_delta: float) -> void:
 				$AnimatedSprite2D.play("default_left")
 	else:
 		if(pd == 1):
-			print("idle")
+			#print("idle")
 			$AnimatedSprite2D.play("default_right")
 		else:	
 			$AnimatedSprite2D.play("default_left")
+	if(!$CanvasLayer.visible && Input.is_action_just_pressed("INVENTORY")):
+		$CanvasLayer.visible = true
+		lock = true
+		print("inv")
+	elif($CanvasLayer.visible && Input.is_action_just_pressed("INVENTORY")):
+		$CanvasLayer.visible = false
+		lock = false
+		print("no inv")
 	# Apply movement
 	velocity = direction * speed
 	move_and_slide()

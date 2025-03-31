@@ -1,7 +1,8 @@
-[gd_scene load_steps=25 format=3 uid="uid://dp2rxcltklwhc"]
+[gd_scene load_steps=26 format=3 uid="uid://dp2rxcltklwhc"]
 
 [ext_resource type="Script" uid="uid://dn60uvdswsivx" path="res://scriptek/player.gd" id="1_spvoi"]
 [ext_resource type="Texture2D" uid="uid://d4fienovyijp2" path="res://Assets/visual/Tiny Wonder Farm Free/characters/main character/walk and idle.png" id="2_he8lv"]
+[ext_resource type="PackedScene" uid="uid://685s2athgri2" path="res://scenes/inventory_ui.tscn" id="3_qhqgy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r2ja7"]
 size = Vector2(13, 13)
@@ -186,3 +187,27 @@ zoom = Vector2(3, 3)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 visible = false
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.454902, 0.243137, 1)
+
+[node name="Bag" type="Label" parent="CanvasLayer/ColorRect"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -45.0
+offset_top = 50.0
+offset_right = 45.0
+offset_bottom = 119.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 50
+text = "Bag"
+
+[node name="Inventory_UI" parent="CanvasLayer/ColorRect" instance=ExtResource("3_qhqgy")]
+layout_mode = 1

@@ -1,8 +1,10 @@
 ~ Start
+set Global.IsInDialogue = true
 Ship: Do you Want to leave the Tutorial Island?
 - Yes! => Finish
 - No! => END
 ~ Finish
 set Global.previousScene = "tutorial"
+set Global.IsInDialogue = false
 do get_tree().change_scene_to_file("res://scenes/Places/MainFarmIsland.tscn")
 => END
