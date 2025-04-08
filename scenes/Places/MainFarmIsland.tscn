@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=4 uid="uid://cqjkayio1q1hb"]
+[gd_scene load_steps=8 format=4 uid="uid://cqjkayio1q1hb"]
 
 [ext_resource type="Script" uid="uid://gn1msqtqjmxv" path="res://scriptek/main_farm_island_player_placer.gd" id="1_5jkym"]
 [ext_resource type="TileSet" uid="uid://drdb0imrl2hej" path="res://Rescources/styles/Island_tileset.tres" id="1_knx1t"]
@@ -7,6 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://dd77l4p1ekae0" path="res://scenes/farmland.tscn" id="4_nbpnc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5jkym"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_prf8o"]
+size = Vector2(18, 17)
 
 [node name="MainFarmIsland" type="Node2D"]
 script = ExtResource("1_5jkym")
@@ -212,5 +215,12 @@ position = Vector2(120, 167)
 position = Vector2(831, 39)
 shape = SubResource("RectangleShape2D_5jkym")
 
+[node name="haz" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="haz"]
+position = Vector2(776, 7.5)
+shape = SubResource("RectangleShape2D_prf8o")
+
 [connection signal="body_entered" from="ToVillage" to="." method="_on_to_village_body_entered"]
 [connection signal="body_exited" from="ToVillage" to="." method="_on_to_village_body_exited"]
+[connection signal="body_entered" from="haz" to="." method="_on_haz_body_entered"]
