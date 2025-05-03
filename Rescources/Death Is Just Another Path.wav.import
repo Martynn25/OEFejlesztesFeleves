@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://chv6dp4pyil5e"
+path="res://.godot/imported/Death Is Just Another Path.wav-688f04c5c22ec9040f713d34ca8a6d43.sample"
+
+[deps]
+
+source_file="res://Rescources/Death Is Just Another Path.wav"
+dest_files=["res://.godot/imported/Death Is Just Another Path.wav-688f04c5c22ec9040f713d34ca8a6d43.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

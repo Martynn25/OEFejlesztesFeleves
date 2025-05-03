@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://bpfmr2ge3ydil"]
+[gd_scene load_steps=8 format=3 uid="uid://bpfmr2ge3ydil"]
 
 [ext_resource type="Script" uid="uid://c81q3vcp344d7" path="res://scriptek/MainMenu.gd" id="1_ceawt"]
 [ext_resource type="Texture2D" uid="uid://dnkqbn7b0yhtm" path="res://Assets/visual/UI/UiCozyFree.png" id="2_ywey8"]
 [ext_resource type="Theme" uid="uid://cqpuhxeh21kxw" path="res://Rescources/styles/buttons/start_button.tres" id="3_ek43n"]
 [ext_resource type="Theme" uid="uid://bx4xt3j8qbbhv" path="res://Rescources/styles/buttons/Settings_Button.tres" id="4_wthww"]
 [ext_resource type="Theme" uid="uid://dic2ly0g04k4a" path="res://Rescources/styles/buttons/credits_button.tres" id="5_6b14i"]
+[ext_resource type="Theme" uid="uid://bf7yv8mogv2hy" path="res://Rescources/styles/buttons/IntoSettings.tres" id="6_cty7a"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hbp82"]
 atlas = ExtResource("2_ywey8")
@@ -53,9 +54,19 @@ offset_bottom = 355.0
 scale = Vector2(2, 2)
 theme = ExtResource("5_6b14i")
 
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 548.0
+offset_top = 330.0
+offset_right = 573.0
+offset_bottom = 355.0
+scale = Vector2(2, 2)
+theme = ExtResource("6_cty7a")
+
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(575, 346)
 
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

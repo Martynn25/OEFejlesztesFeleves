@@ -1,0 +1,69 @@
+[gd_scene load_steps=6 format=3 uid="uid://ie2khg8i0biy"]
+
+[ext_resource type="Texture2D" uid="uid://dnkqbn7b0yhtm" path="res://Assets/visual/UI/UiCozyFree.png" id="1_evpxs"]
+[ext_resource type="Script" uid="uid://cvgji0q31ohsi" path="res://scenes/menus/options.gd" id="1_rgei6"]
+[ext_resource type="Theme" uid="uid://cgy2di33wu27m" path="res://Rescources/styles/buttons/Done_button.tres" id="2_rgei6"]
+[ext_resource type="Theme" uid="uid://ba8idfwjtkk6n" path="res://Rescources/styles/buttons/OutSettings.tres" id="4_rl8me"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rl8me"]
+atlas = ExtResource("1_evpxs")
+region = Rect2(8, 168, 88, 80)
+
+[node name="Options" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rgei6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(575, 346)
+scale = Vector2(4, 4)
+texture = SubResource("AtlasTexture_rl8me")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(575, 346)
+
+[node name="Apply" type="Button" parent="."]
+layout_mode = 0
+offset_left = 470.0
+offset_top = 330.0
+offset_right = 494.0
+offset_bottom = 354.0
+scale = Vector2(2, 2)
+theme = ExtResource("2_rgei6")
+
+[node name="Back" type="Button" parent="."]
+layout_mode = 0
+offset_left = 618.0
+offset_top = 330.0
+offset_right = 642.0
+offset_bottom = 354.0
+scale = Vector2(2, 2)
+theme = ExtResource("4_rl8me")
+
+[node name="HSlider" type="HSlider" parent="."]
+layout_mode = 0
+offset_left = 425.0
+offset_top = 267.0
+offset_right = 575.0
+offset_bottom = 283.0
+scale = Vector2(2, 2)
+min_value = 0.001
+max_value = 1.0
+step = 0.001
+value = 0.002
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 434.0
+offset_top = 225.0
+offset_right = 493.0
+offset_bottom = 248.0
+scale = Vector2(2, 2)
+text = "Volume"
+
+[connection signal="pressed" from="Apply" to="." method="_on_apply_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

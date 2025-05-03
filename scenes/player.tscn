@@ -1,8 +1,9 @@
-[gd_scene load_steps=26 format=3 uid="uid://dp2rxcltklwhc"]
+[gd_scene load_steps=27 format=3 uid="uid://dp2rxcltklwhc"]
 
 [ext_resource type="Script" uid="uid://dn60uvdswsivx" path="res://scriptek/player.gd" id="1_spvoi"]
 [ext_resource type="Texture2D" uid="uid://d4fienovyijp2" path="res://Assets/visual/Tiny Wonder Farm Free/characters/main character/walk and idle.png" id="2_he8lv"]
 [ext_resource type="PackedScene" uid="uid://685s2athgri2" path="res://scenes/inventory_ui.tscn" id="3_qhqgy"]
+[ext_resource type="AudioStream" uid="uid://bonmy033x0x8c" path="res://Assets/Audio/step.wav" id="4_dqkch"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r2ja7"]
 size = Vector2(13, 13)
@@ -211,3 +212,11 @@ text = "Bag"
 
 [node name="Inventory_UI" parent="CanvasLayer/ColorRect" instance=ExtResource("3_qhqgy")]
 layout_mode = 1
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_dqkch")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

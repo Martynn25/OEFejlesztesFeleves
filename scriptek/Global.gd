@@ -8,9 +8,11 @@ var Inventory := []
 var Hotbar := 5
 signal Inventory_updated
 var Player :Node = null
+var volume := 0.002
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	
+	$"music".play()
 	var InteractArray = InputMap.action_get_events("Interact")
 	Interact.append(InteractArray[0].as_text().rstrip(" (Physical)"))
 	Interact.append(InteractArray[1].as_text())
@@ -22,6 +24,9 @@ func _ready():
 	print(inv_inp)
 	
 	Inventory.resize(15)
+
+func _process(delta: float) -> void:
+	$music.volume_db = volume
 
 func add_item(item: Node):
 	for i in range(Inventory.size()):
@@ -48,3 +53,14 @@ func set_player_reference(player):
 
 func _mod_money(amount : int):
 	Money += amount
+
+func Volume_to_Slide(val):
+	return db_to_linear(val)
+
+func Slide_to_Volume(val):
+	return linear_to_db(val)
+
+
+func _on_music_finished() -> void:
+	$"music".play()
+	pass # Replace with function body.

@@ -1,10 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://e67pmcdymawn"]
+[gd_scene load_steps=3 format=3 uid="uid://e67pmcdymawn"]
 
 [ext_resource type="Script" uid="uid://bb7xj3ibed4xk" path="res://scriptek/Global.gd" id="1_gw0we"]
+[ext_resource type="AudioStream" uid="uid://c5tb3f3pnctog" path="res://Assets/Audio/Death Is Just Another Path.wav" id="2_n3hj2"]
 
 [node name="Global" type="Node"]
 script = ExtResource("1_gw0we")
 
 [node name="music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_n3hj2")
 
 [node name="SoundEffects" type="AudioStreamPlayer2D" parent="."]
+
+[connection signal="finished" from="music" to="." method="_on_music_finished"]

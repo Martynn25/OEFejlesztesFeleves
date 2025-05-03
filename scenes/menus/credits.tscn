@@ -1,7 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://ckn6bog5ota70"]
+[gd_scene load_steps=5 format=3 uid="uid://ckn6bog5ota70"]
 
 [ext_resource type="Script" uid="uid://bntgmfeupd4wi" path="res://scriptek/credits.gd" id="1_3dafo"]
+[ext_resource type="Texture2D" uid="uid://dnkqbn7b0yhtm" path="res://Assets/visual/UI/UiCozyFree.png" id="2_b2mra"]
 [ext_resource type="Theme" uid="uid://bx4xt3j8qbbhv" path="res://Rescources/styles/buttons/Settings_Button.tres" id="2_brpoa"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yrcfj"]
+atlas = ExtResource("2_b2mra")
+region = Rect2(8, 168, 88, 80)
 
 [node name="Credits" type="Control"]
 layout_mode = 3
@@ -12,33 +17,58 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_3dafo")
 
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(357, 346)
+scale = Vector2(5, 5)
+texture = SubResource("AtlasTexture_yrcfj")
+
 [node name="Exit" type="Button" parent="."]
 layout_mode = 0
-offset_left = 530.0
-offset_top = 350.0
-offset_right = 555.0
-offset_bottom = 375.0
+offset_left = 304.0
+offset_top = 411.0
+offset_right = 329.0
+offset_bottom = 436.0
+scale = Vector2(2, 2)
 theme = ExtResource("2_brpoa")
 text = " "
 
 [node name="LinkButton" type="LinkButton" parent="."]
 layout_mode = 0
-offset_left = 458.0
-offset_top = 292.0
-offset_right = 682.0
-offset_bottom = 332.0
+offset_left = 178.0
+offset_top = 348.0
+offset_right = 402.0
+offset_bottom = 388.0
+scale = Vector2(1.5, 1.5)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Tiny Wonder Farm Assetpack"
 underline = 1
 uri = "https://butterymilk.itch.io/tiny-wonder-farm-asset-pack"
 
 [node name="LinkButton2" type="LinkButton" parent="."]
 layout_mode = 0
-offset_left = 457.0
-offset_top = 246.0
-offset_right = 555.0
-offset_bottom = 286.0
+offset_left = 178.0
+offset_top = 302.0
+offset_right = 276.0
+offset_bottom = 342.0
+scale = Vector2(1.5, 1.5)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Cozy Ui pack"
 underline = 1
 uri = "https://toffeecraft.itch.io/ui-user-interface-pack-cozy-coffee"
+
+[node name="LinkButton3" type="LinkButton" parent="."]
+layout_mode = 0
+offset_left = 178.0
+offset_top = 252.0
+offset_right = 442.0
+offset_bottom = 292.0
+scale = Vector2(1.5, 1.5)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Death Is Just Another Path (music)"
+underline = 1
+uri = "https://opengameart.org/content/death-is-just-another-path"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(357, 346)
 
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
