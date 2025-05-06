@@ -1,10 +1,13 @@
 ~ Start
 set Global.IsInDialogue = true
+set Global.NpcRescource = load("res://Assets/visual/Objects/sign.png")
 Ship: Do you Want to leave the Tutorial Island?
 - Yes! => Finish
-- No! => END
+- No! => Fin
 ~ Finish
 set Global.previousScene = "tutorial"
 set Global.IsInDialogue = false
 do get_tree().change_scene_to_file("res://scenes/Places/MainFarmIsland.tscn")
+~ Fin
+set Global.IsInDialogue = false
 => END

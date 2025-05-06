@@ -27,6 +27,10 @@ func _process(_delta: float) -> void:
 			Planted = true
 			$Crop.visible = true
 			$Crop.play("pumpkin")
+			$InventoryItem.Item_name = "pumpkin"
+			$InventoryItem.Item_type = "crop"
+			$InventoryItem.Item_price = 1
+			$InventoryItem.Item_texture ="pumpkin"
 			print("Crop planted")
 
 		# Harvesting logic
@@ -34,6 +38,7 @@ func _process(_delta: float) -> void:
 			print("Crop harvested")
 			CropReady = false
 			Planted = false
+			$InventoryItem.Item_give()
 			$Crop.visible = false
 			$Finish.visible = false
 

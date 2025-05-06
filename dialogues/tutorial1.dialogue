@@ -1,5 +1,6 @@
 ~ Start
 set Global.IsInDialogue = true
+set Global.NpcRescource = load("res://Assets/visual/Objects/sign.png")
 => egy
 ~ egy
 Sign: Use The Arrow keys or W A S D to move

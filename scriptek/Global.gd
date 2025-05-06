@@ -6,12 +6,13 @@ var previousScene =""
 var Money := 100
 var Inventory := []
 var Hotbar := 5
+var NpcRescource : Resource
 signal Inventory_updated
 var Player :Node = null
 var volume := 0.002
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	
+	Engine.physics_jitter_fix = 1.0
 	$"music".play()
 	var InteractArray = InputMap.action_get_events("Interact")
 	Interact.append(InteractArray[0].as_text().rstrip(" (Physical)"))
@@ -28,20 +29,31 @@ func _ready():
 func _process(delta: float) -> void:
 	$music.volume_db = volume
 
-func add_item(item: Node):
+func add_item(item):
 	for i in range(Inventory.size()):
 		if Inventory[i] != null && Inventory[i]["name"] == item["name"]:
 			Inventory[i]["quantity"] += item["quantity"]
 			Inventory_updated.emit()
+			print("added")
 			return true
 		elif Inventory[i] == null:
 			Inventory[i] = item
 			Inventory_updated.emit()
+			print("added")
 			return true
+		print("failed")
 		return false
-func remove_item(item: Node):
-	
-	Inventory_updated.emit()
+func remove_item(item):
+	for i in range(Inventory.size()):
+		if Inventory[i] != null && Inventory[i]["name"] == item["name"]:
+			Inventory[i]["quantity"] -= item["quantity"]
+			if Inventory[i]["quantity"] == 0:
+				Inventory[i]= null
+			Inventory_updated.emit()
+			return true
+		elif Inventory[i] == null:
+			return false
+		return false
 
 func Change_Inv_Size(size : int, item : Node):
 	remove_item(item)

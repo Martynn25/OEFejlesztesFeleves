@@ -1,5 +1,6 @@
 ~ start
 set Global.IsInDialogue = true
+set Global.NpcRescource = load("res://Assets/visual/Objects/sign.png")
  : Do you want to return to your farm?
 - Yes! => Finish
 - No! => END
