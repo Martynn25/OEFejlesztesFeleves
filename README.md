@@ -3,18 +3,15 @@
 ## Overview
 This is a 2D game developed in **Godot Engine 4.4** as a school project. The game features engaging gameplay, interactive NPCs, and a branching dialogue system powered by the **DialogueManager3** plugin.
 
-## Features
-- **Built with Godot 4.4** – Utilizing its powerful 2D engine for smooth performance.
-- **Dialogue System** – Implemented using the DialogueManager3 plugin for dynamic NPC interactions.
-- **Node-Based Architecture** – Efficient and modular game design.
-- **Custom Sprites & Animations** – High-quality visuals with an advanced animation system.
-- **Multi-Platform Support** – Designed for PC, with potential expansion to other platforms.
-
 ## Installation & Running the Game
 1. Download and install **Godot Engine 4.4** from [Godot's official website](https://godotengine.org/).
 2. Clone or download this repository.
 3. Open the project in Godot.
 4. Run the game by pressing **F5** (or clicking the Play button).
+
+### OR
+
+After downloading the game, run the exe file (i wont be putting it into release yet sorry)
 
 ## Controls
 - **Movement:** Arrow keys / WASD
@@ -35,4 +32,4 @@ This project is for educational purposes and not intended for commercial use but
 I am using obsidian to create and visualise the documentation for this project but I will create a PDF version of it when "finished"
 
 ---
-*Created as part of a school project.*
+# *Created as part of a school project.*
